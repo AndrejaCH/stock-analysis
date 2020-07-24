@@ -1,22 +1,23 @@
-#Green-Energy Stocks Analysis
+# Green-Energy Stocks Analysis
+
 *VBA stock-market analysis*
 
 ## Overview of Project
 ### Background 
 In this project, I am performing data analysis for green-energy stocks (from the year 2017 and 2018), in order to analyze their:
-- [x] Yearly return and
+- [x] Yearly Return and
 - [x] Total Daily Volume.
 
 For this data analysis I am using Microsoft ***Visual Basic for Applications*** or short ***VBA*** as a tool, including **conditional statements**, **for loops**, **static and conditional formatting**, and nevertheless **refactoring** in order to improve code efficiency and clarity.
 
-A general idea of the analysis using VBA is to automate tedious processes, improve the efficiency and uniformity of the analysis output, reduce the chance of accidents and errors and make it reusable for similar future projects. The coding part in VBA (as well as in any other programming language) is not a one-time deal, yet is an ever-growing and ever-improving task. We can come back to the “old code”, and rewrite it in our favor. To highlight the importance of **refactoring** this analysis heavily focus on this topic. In ![.xlsm](VBA_Challenge.xlsm) file are two .vbs modules that contain VBA code **before refactoring (Module 1)** and **after refactoring (Module 2).
+A general idea of the analysis using VBA is to automate tedious processes, improve the efficiency and uniformity of the analysis output, reduce the chance of accidents and errors and make it reusable for similar future projects. The coding part in VBA (as well as in any other programming language) is not a one-time deal, yet is an ever-growing and ever-improving task. We can come back to the “old code”, and rewrite it in our favor. To highlight the importance of **refactoring** this analysis heavily focus on this topic. In ![.xlsm](VBA_Challenge.xlsm) file are two .vbs modules that contain VBA code **before refactoring (Module 1)** and **after refactoring (Module 2)**.
 
 ### Purpose
 The purpose of this analysis is to help Steve analyze the green-energy stocks market for his parents. They are interested in investing in DAQO stocks (Ticker: DQ), which is *new energy stocks corporation*, a company that makes silicon wafers for solar panels. Before investing their money, Steve wants to run some analyses in order to check DQ stocks status and performance over the years in comparison to other green-energy Based on the analysis he will have a better idea if DQ stocks are worth investing his parents’ money.
 
 <kbd>
 <p align="center">
-<img src="Graphics/GreenStocks.PNG" width="40%" height="40%">
+<img src="Graphics/GreenStocks.PNG" width="50%" height="50%">
 </p>
 </kbd>
 
@@ -31,7 +32,7 @@ The table below displays the analysis for a dozen green-energy stocks (for compa
 - Percentage of a yearly return 
 
 <p align="center">
-<img src="graphics/AllStocks2017.PNG" width="40%" height="40%"> <img src="graphics/AllStocks2018.PNG" width="40%" height="40%">
+<img src="Graphics/AllStocks2017.PNG" width="20%" height="20%">    <img src="Graphics/AllStocks2018.PNG" width="20%" height="20%">
 </p>
 
 #### Yearly return (%)
@@ -104,7 +105,7 @@ Code with nested loops(click here for full code)  | Code without nested loops(cl
 The code is switching back and forth between worksheets what is time-consuming. | Code stays in the same loop, gathers all information, store and in an array. In another loop the results are populated in the selected worksheet.  
 :----------------------------------: |:-------------------------------------:
  Execution times |  Execution times 
-<img src="resources/VBA_Challenge_2018.PNG" width="50%" height="50%"> | <img src="resources/VBA_Challenge_2018.PNG" width="50%" height="50%">
+<img src="Resources/VBA_Challenge_2018.PNG" width="50%" height="50%"> | <img src="Resources/VBA_Challenge_2018.PNG" width="50%" height="50%">
 :----------------------------------: |:-------------------------------------:
 
 The code ran almost 5x faster.   
