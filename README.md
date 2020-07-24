@@ -16,9 +16,11 @@ A general idea of the analysis using VBA is to automate tedious processes, impro
 The purpose of this analysis is to help Steve analyze the green-energy stocks market for his parents. They are interested in investing in DAQO stocks (Ticker: DQ), which is *new energy stocks corporation*, a company that makes silicon wafers for solar panels. Before investing their money, Steve wants to run some analyses in order to check DQ stocks status and performance over the years in comparison to other green-energy Based on the analysis he will have a better idea if DQ stocks are worth investing his parents’ money.
 
 <kbd>
+    
 <p align="center">
-<img src="Graphics/GreenStocks.PNG" width="50%" height="50%">
+<img src="Graphics/GreenStocks.PNG" width="60%" height="60%">
 </p>
+
 </kbd>
 
 ```In this report``` :recycle: ```symbol is used to highlight the findings for Steve.```
@@ -32,7 +34,7 @@ The table below displays the analysis for a dozen green-energy stocks (for compa
 - Percentage of a yearly return 
 
 <p align="center">
-<img src="Graphics/AllStocks2017.PNG" width="20%" height="20%">    <img src="Graphics/AllStocks2018.PNG" width="20%" height="20%">
+<img src="Graphics/AllStocks2017.PNG" width="30%" height="30%">    <img src="Graphics/AllStocks2018.PNG" width="30%" height="30%">
 </p>
 
 #### Yearly return (%)
@@ -97,18 +99,19 @@ End If
 The main difference in code was to rewrite code in order to avoid nested loops. Nested are great and are used to cycle through the matrix and tabular data, yet they can be process-intensive.
 
 Code before refactoring (Module 1). |  Code after refactoring (Module 2).
-:--------------------------------------------------:| :------------------------------------------------:
-Code with nested loops(click here for full code)  | Code without nested loops(click here for full code) creating multiple loops	
-:------------------------------------------------------------: | :-----------------------------------------------------:
+:------------------------------------------:| :-------------------------------------:
+Code with nested loops(click on the picture to enlarge)  | Code without nested loops(click on the picture to enlarge) creating multiple loops	
+:---------------------------------------------------: | :-----------------------------------------:
 ![code before refactoring](Graphics/CodeNestedLoop.PNG) | ![code after refactoring](Graphics/CodeRefactored.PNG)
-:------------------------------------------: | :-------------------------------------:
+:------------------------------: | :-------------------------:
 The code is switching back and forth between worksheets what is time-consuming. | Code stays in the same loop, gathers all information, store and in an array. In another loop the results are populated in the selected worksheet.  
-:----------------------------------: |:-------------------------------------:
+:-----------------------------: |:--------------------------:
  Execution times |  Execution times 
-<img src="Resources/VBA_Challenge_2018.PNG" width="50%" height="50%"> | <img src="Resources/VBA_Challenge_2018.PNG" width="50%" height="50%">
-:----------------------------------: |:-------------------------------------:
+<img src="Resources/VBA_Challenge_2018.PNG" width="90%" height="90%"> | <img src="Resources/VBA_Challenge_2018_Ref.PNG" width="90%" height="90%">
 
-The code ran almost 5x faster.   
+
+
+:heavy_check_mark: **The refactored code ran almost 5x faster.***   
 
 ## Summary
 
