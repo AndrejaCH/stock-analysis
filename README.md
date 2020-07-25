@@ -21,7 +21,10 @@ The purpose of this analysis is to help Steve analyze the green-energy stock mar
 </kbd>
 </p>
 
+
+<p align="center">
 ```In this report``` :recycle: ```symbol is used to highlight the findings for Steve.```
+</p>
 
 ## Results
 ### Analysis of green stocks for 2017 and 2018
@@ -69,7 +72,9 @@ If Cells(i + 1, 2).Value <> tickers(tickerIndex) And Cells(i, 2).Value = tickers
 End If
 ```
 To make this code work we need to use conditionals or `if statements`. As before, the variable `tickerIndex` helps us find the start and endpoint of an old/new ticker in the dataset. Arrays `Dim tickerStartingPrices(12) As Single` and `Dim tickerEndingPrices(12) As Single` store captures values.
-In “human” language we would read the following code something like this: *If the cell value in previous row (2nd column) is not the same as current cell value (2nd column), (that means the ticker index reached a starting point of the new ticker), then capture the value for starting price of a new ticker in a current row (7th column) and store it in a “container” named tickerEndingPrices under label “current” tickerIndex.*
+In “human” language we would read the following code something like this: 
+
+>If the cell value in previous row (2nd column) is not the same as current cell value (2nd column), (that means the ticker index reached a starting point of the new ticker), then capture the value for starting price of a new ticker in a current row (7th column) and store it in a “container” named tickerEndingPrices under label “current” tickerIndex.
 
 #### For loops
 For loops are responsible for executing the code in a repetitive manner until the condition is met. 
@@ -103,12 +108,13 @@ Code before refactoring (Module 1). |  Code after refactoring (Module 2).
 :------------------------------------------:| :-------------------------------------:
 Code with nested loops(click on the picture to enlarge)  | Code without nested loops(click on the picture to enlarge) creating multiple loops	
 ![code before refactoring](Graphics/CodeNestedLoop.PNG) | ![code after refactoring](Graphics/CodeRefactored.PNG)
-The code is switching back and forth between worksheets what is time-consuming. | Code stays in the same loop, gathers all data, store it in an array, then in another for loop the results are populated in the selected worksheet.  
+The code is switching back and forth between worksheets what is time-consuming and process-intense. | Code stays in the same loop, gathers all data, store it in an array, then in another for loop the results are populated in the selected worksheet.  
  Execution times |  Execution times 
 <img src="Resources/VBA_Challenge_2018.PNG" width="90%" height="90%"> | <img src="Resources/VBA_Challenge_2018_Ref.PNG" width="90%" height="90%">
 
-:heavy_check_mark: **The refactored code ran almost 5x faster.***   
-
+<p align="center">
+### :heavy_check_mark: **The refactored code ran almost 5x faster.** 
+</p>
 
 ## Summary
 
@@ -126,9 +132,9 @@ The code is switching back and forth between worksheets what is time-consuming. 
 
 ### How do these pros and cons apply to refactoring the original VBA script?
 
-There is no doubt that this analysis was challenging. Refactoring VBA script was a bit **frustrating** (when code wasn’t executed the wanted output), a bit **confusing** (when the understanding of the basics wasn’t under the belt yet, the advanced techniques were misleading), and **time-consuming** (it took-up quite a bit of time to finish the challenge). Yet, on the other hand, was extremely **rewarding** and **fulfilling**. This technique added up another level of coding -- that is -- deepened the understanding of the logic of the code. Hard work was paid off with new knowledge and understanding of the complex structure of the code.
+:leaves: There is no doubt that this analysis was challenging. Refactoring VBA script was a bit **frustrating** (when code wasn’t executed wanted output), a bit **confusing** (when the understanding of the basics wasn’t under the belt yet), and **time-consuming** (it took up quite a bit of time to finish the challenge). Yet, on the other hand, was extremely **rewarding** and **fulfilling**. This technique added up another level of coding -- that is -- deepened the understanding of the logic of the code. Hard work was paid off with new knowledge and understanding of the complex structure of the code.
 
-Other advantages of refactoring the code are, that code ran much faster, **5-times faster**, by the code taking fewer steps (it didn’t switch back and forth between the worksheets). Another bigger improvement of the code was to access the arrays with a single variable `tickerIndex`. In this case, code stored all elements in arrays before switching to another worksheet. By doing this we were able to avoid nested loops, that can be quite process-intensive.
+:leaves: Other advantages of refactoring the code are, that code ran much faster, **5-times faster**. This is because the code took fewer steps (it didn’t switch back and forth between the worksheets). Another bigger improvement of the code was accessing the arrays with a single variable `tickerIndex`. In this case, code stored all elements in arrays before switching to another worksheet. By doing this we were able to avoid nested loops, that can be quite process-intensive.
 
 ## References
 (1) “Is a Stock's Trade Volume Important?, https://www.investopedia.com/articles/investing/060315/stocks-trade-volume-important.asp#:~:text=If%20you%20see%20a%20stock,more%20demand%20for%20that%20stock.,Web 23 Jul 2020.)
