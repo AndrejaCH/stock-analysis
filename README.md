@@ -103,13 +103,12 @@ Code before refactoring (Module 1). |  Code after refactoring (Module 2).
 :------------------------------------------:| :-------------------------------------:
 Code with nested loops(click on the picture to enlarge)  | Code without nested loops(click on the picture to enlarge) creating multiple loops	
 ![code before refactoring](Graphics/CodeNestedLoop.PNG) | ![code after refactoring](Graphics/CodeRefactored.PNG)
-The code is switching back and forth between worksheets what is time-consuming. Nested loops are great and are used to cycle through the matrix and tabular data, yet they can be process-intensive. | Code stays in the same loop, gathers all data, store it in an array, then in another for loop the results are populated in the selected worksheet.  
+The code is switching back and forth between worksheets what is time-consuming. | Code stays in the same loop, gathers all data, store it in an array, then in another for loop the results are populated in the selected worksheet.  
  Execution times |  Execution times 
 <img src="Resources/VBA_Challenge_2018.PNG" width="90%" height="90%"> | <img src="Resources/VBA_Challenge_2018_Ref.PNG" width="90%" height="90%">
 
-<p align="center">
 :heavy_check_mark: **The refactored code ran almost 5x faster.***   
-</p>
+
 
 ## Summary
 
