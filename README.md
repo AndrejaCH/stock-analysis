@@ -23,7 +23,7 @@ The purpose of this analysis is to help Steve analyze the green-energy stock mar
 
 
 <p align="center">
-In this report :recycle: symbol is used to highlight the findings for Steve.```
+In this report :recycle: symbol is used to highlight the findings for Steve.
 </p>
 
 ## Results
@@ -53,6 +53,10 @@ In general, a high volume of daily trading is an indicator of a stable stock, wi
 ### The code behind the table 
 Both codes **“AllStockAnalysis”** and **“AllStockAnalysisRefactored”** have the same output. Codes run calculations from the following ![dataset](VBA_Challenge.xlsm) and return data on a new worksheet **All_Stock_Analysis**. The idea of presenting two codes with the same output is to highlight the importance of refactoring.
 
+<p align="center">
+<img src="Graphics/StockAnalysis.gif" width="50%" height="50%">
+</p>
+          
 #### Ticker (column A):
 Array `Dim tickers(12) As String` holds 12 elements - tickers. `tickerIndex`, a new variable accessing array indexes and returning values in the table. 
 
