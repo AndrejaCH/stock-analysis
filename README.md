@@ -23,7 +23,7 @@ The purpose of this analysis is to help Steve analyze the green-energy stock mar
 
 
 <p align="center">
-```In this report``` :recycle: ```symbol is used to highlight the findings for Steve.```
+In this report :recycle: symbol is used to highlight the findings for Steve.```
 </p>
 
 ## Results
@@ -113,7 +113,7 @@ The code is switching back and forth between worksheets what is time-consuming a
 <img src="Resources/VBA_Challenge_2018.PNG" width="90%" height="90%"> | <img src="Resources/VBA_Challenge_2018_Ref.PNG" width="90%" height="90%">
 
 <p align="center">
-### :heavy_check_mark: **The refactored code ran almost 5x faster.** 
+:heavy_check_mark: The refactored code ran almost 5x faster.
 </p>
 
 ## Summary
@@ -132,9 +132,9 @@ The code is switching back and forth between worksheets what is time-consuming a
 
 ### How do these pros and cons apply to refactoring the original VBA script?
 
-:leaves: There is no doubt that this analysis was challenging. Refactoring VBA script was a bit **frustrating** (when code wasn’t executed wanted output), a bit **confusing** (when the understanding of the basics wasn’t under the belt yet), and **time-consuming** (it took up quite a bit of time to finish the challenge). Yet, on the other hand, was extremely **rewarding** and **fulfilling**. This technique added up another level of coding -- that is -- deepened the understanding of the logic of the code. Hard work was paid off with new knowledge and understanding of the complex structure of the code.
+- There is no doubt that this analysis was challenging. Refactoring VBA script was a bit **frustrating** (when code wasn’t executed wanted output), a bit **confusing** (when the understanding of the basics wasn’t under the belt yet), and **time-consuming** (it took up quite a bit of time to finish the challenge). Yet, on the other hand, was extremely **rewarding** and **fulfilling**. This technique added up another level of coding -- that is -- deepened the understanding of the logic of the code. Hard work was paid off with new knowledge and understanding of the complex structure of the code.
 
-:leaves: Other advantages of refactoring the code are, that code ran much faster, **5-times faster**. This is because the code took fewer steps (it didn’t switch back and forth between the worksheets). Another bigger improvement of the code was accessing the arrays with a single variable `tickerIndex`. In this case, code stored all elements in arrays before switching to another worksheet. By doing this we were able to avoid nested loops, that can be quite process-intensive.
+- Other advantages of refactoring the code are, that code ran much faster, **5-times faster**. This is because the code took fewer steps (it didn’t switch back and forth between the worksheets). Another bigger improvement of the code was accessing the arrays with a single variable `tickerIndex`. In this case, code stored all elements in arrays before switching to another worksheet. By doing this we were able to avoid nested loops, that can be quite process-intensive.
 
 ## References
 (1) “Is a Stock's Trade Volume Important?, https://www.investopedia.com/articles/investing/060315/stocks-trade-volume-important.asp#:~:text=If%20you%20see%20a%20stock,more%20demand%20for%20that%20stock.,Web 23 Jul 2020.)
