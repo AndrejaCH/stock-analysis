@@ -117,7 +117,7 @@ The code is switching back and forth between worksheets what is time-consuming a
 ![](Resources/VBA_Challenge_2018.PNG) | ![](Resources/VBA_Challenge_2018_Ref.PNG)
 
 <p align="center">
-:heavy_check_mark: **The refactored code ran almost 5x faster.
+:heavy_check_mark: The refactored code ran almost 5x faster.
 </p>
 
 ## Summary
@@ -133,7 +133,7 @@ The code is switching back and forth between worksheets what is time-consuming a
 :leaves: On the other hand, ***the downsides*** of refactoring code (ours or someone else's) can be:
 
 - **frustrating** and **time-consuming**. We might not be aware of the purpose of the code and its functionality. This can be even more difficult if the code is not well commented and we would spend a lot of time figuring out what specific lines or blocks of code are supposed to do. 
-- Moreover, by refactoring the code, we could be taken a long way, making code **less efficient** or could **even break the code**. 
+- **less efficient** and **even break the code**. By refactoring the code, we could end up with a broken code and result in less eficient script. 
 
 ### How do these pros and cons apply to refactoring the original VBA script?
 
