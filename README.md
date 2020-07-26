@@ -48,7 +48,7 @@ Green-energy stocks in 2017 have a high ratio of positive yearly returns (only o
 
 In general, a high volume of daily trading is an indicator of a stable stock, with a lot of interest and activity. It is true that in some cases low trading volume can be promising, especially where companies “that have yet to be discovered”(1). 
 
-:recycle: DQ stocks in 2017 had low volume and high yearly return (at that time this might be an indicator of a company on a rise). However, the situation of DQ stocks in 2018 has changed completely. Stocks closed its year with negative 63%. Trading volume was higher, yet didn’t result in a positive outcome. Results of this analysis confirmed a risky investment in DQ stocks.
+:recycle: DQ stocks in 2017 had low volume and high yearly return (at that time this might be an indicator of a company on a rise). However, the situation of DQ stocks in 2018 has changed completely. Stocks closed its year with negative 63%. Trading volume was higher, yet didn’t result in a positive outcome. The results of this analysis confirmed a risky investment in DQ stocks.
 
 ### The code behind the table 
 Both codes **“AllStockAnalysis”** and **“AllStockAnalysisRefactored”** have the same output. Codes run calculations from the following ![dataset](VBA_Challenge.xlsm) and return data on a new worksheet **All_Stock_Analysis**. The idea of presenting two codes with the same output is to highlight the importance of refactoring.
@@ -86,7 +86,7 @@ Incrementing a variable by 1  `tickerIndex = tickerIndex + 1` is  responsible to
 By initializing arrays `tickerVolumes(tickerIndex) = 0` we reset the total volume to zero, before entering the loop again. 
 
 #### Formatting 
-In order to make final table (outpt) organized and visually pleasing, we add static or conditional formatting.
+In order to make the final table (output) organized and visually pleasing, we add static or conditional formatting.
 
 ```
 Range("A1").Font.Italic = True
@@ -94,7 +94,7 @@ Cells(1, 1).Font.Size = 14
 Range("B4").NumberFormat = "#,##0"
 ```
 All formating that is possible in Excel, we can do it in VBA. By selecting a cell `Cells(1, 1)` or a range `Range("A3:C3")` we define where we want to apply formatting.
-There are plenty useful sites online like [this](https://www.excelhowto.com/macros/formatting-a-range-of-cells-in-excel-vba/) where we can find clear formatting instructions. 
+There are plenty of useful sites online like [this](https://www.excelhowto.com/macros/formatting-a-range-of-cells-in-excel-vba/) where we can find clear formatting instructions. 
 
 ```
  If Cells(i, 3) > 0 Then 'set a condition
@@ -102,10 +102,10 @@ There are plenty useful sites online like [this](https://www.excelhowto.com/macr
                  …
 End If
 ```
-Additional to Static formatting we can integrate an `if statememts` in order to set a condition for formatting.
+Additional to Static formatting we can integrate an `if statements` in order to set a condition for formatting.
 
 ### Code comparison
-As mentioned earlier in the analysis I write two VBA skripts in order to higlight the importance of refactoring. The table below shows the difference in the code.
+As mentioned earlier in the analysis I write two VBA scripts in order to highlight the importance of refactoring. The table below shows the difference in the code.
 
 
 Code before refactoring (Module 1). |  Code after refactoring (Module 2).
@@ -130,7 +130,7 @@ The code is switching back and forth between worksheets what is time-consuming a
 - **readability** (code is easier to understand, it’s cleaner as a result of improved logic of the code), 
 - **functionality** (fixing any bugs that might have been overlooked in the original code).
 
-:leaves: On the other hand, ***the downsides*** of refactoring code (ours or someone elses) can be:
+:leaves: On the other hand, ***the downsides*** of refactoring code (ours or someone else's) can be:
 
 - **frustrating** and **time-consuming**. We might not be aware of the purpose of the code and its functionality. This can be even more difficult if the code is not well commented and we would spend a lot of time figuring out what specific lines or blocks of code are supposed to do. Moreover, by refactoring the code, we could be taken a long way, making code less efficient or even break the code. 
 
