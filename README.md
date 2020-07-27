@@ -115,7 +115,7 @@ The code in a nested loop is switching back and forth between worksheets. | Code
 ![](Resources/VBA_Challenge_2018.PNG) | ![](Resources/VBA_Challenge_2018_Ref.PNG)
 
 <p align="center">
-:heavy_check_mark: The refactored code ran almost 5x faster.
+:heavy_check_mark: The refactored code runs almost 5x faster.
 </p>
 
 ## Summary
