@@ -10,6 +10,8 @@ For this data analysis I am using Microsoft ***Visual Basic for Applications*** 
 
 A general idea using VBA is to automate tedious processes, improve the efficiency and uniformity of the analysis output, reduce the chances of accidents and errors and to write a code that can be used for similar future projects. The coding part in VBA (as well as in any other programming language) is not a one-time deal, yet is an ever-growing and ever-improving task. We can come back to the “old code”, and rewrite to make it work better. To highlight the importance of **refactoring** this analysis heavily focuses on this topic. In ![VBA_Challenge.xlsm](VBA_Challenge.xlsm) file are two .vbs modules that contain VBA code **before refactoring (Module 1)** and **after refactoring (Module 2)**.
 
+If you would like to try out the code, please download the ![VBA_Challenge.xlsm](VBA_Challenge.xlsm) file and enable all macros.
+
 ### Purpose
 The purpose of this analysis is to help Steve analyze the green-energy stock market for his parents. They are interested in investing in DAQO stocks (Ticker: DQ), a company that makes silicon wafers for solar panels. Before investing their money, Steve wants to run some analyses and check DQ stocks performance over the years in comparison to other green-energy stocks. Results will help him determine if DQ stocks are worth investing his parents’ money.
 
