@@ -1,7 +1,4 @@
 # Green-Energy Stocks Analysis
-
-*VBA stock-market analysis*
-
 ## Project Overview
 ### Background 
 In this project, I am performing data analysis for green-energy stocks (from the year 2017 and 2018), in order to analyze their ***yearly return*** and ***total daily volume***.
