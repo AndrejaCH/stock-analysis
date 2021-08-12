@@ -3,7 +3,7 @@
 ### Background 
 In this project, I am performing data analysis for green-energy stocks (from the year 2017 and 2018), in order to analyze their ***yearly return*** and ***total daily volume***.
 
-For this data analysis I am using Microsoft ***Visual Basic for Applications*** or short ***VBA*** as a tool, including **conditional statements**, **for loops**, **static and conditional formatting**, and nevertheless **code refactoring** in order to improve its efficiency and clarity.
+For this data analysis I am using Microsoft ***Visual Basic for Applications*** or short ***VBA***, including **conditional statements**, **for loops**, **static and conditional formatting**, and nevertheless **code refactoring** in order to improve its efficiency and clarity.
 
 A general idea using VBA is to automate tedious processes, improve the efficiency and uniformity of the analysis output, reduce the chances of accidents and errors and to write a code that can be used for similar future projects. The coding part in VBA (as well as in any other programming language) is not a one-time deal, yet is an ever-growing and ever-improving task. We can come back to the “old code”, and rewrite to make it work better. To highlight the importance of **refactoring** this analysis heavily focuses on this topic. In ![VBA_Challenge.xlsm](VBA_Challenge.xlsm) file are two .vbs modules that contain VBA code **before refactoring (Module 1)** and **after refactoring (Module 2)**.
 
