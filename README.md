@@ -48,7 +48,7 @@ In general, a high volume of daily trading is an indicator of a stable stock, wi
 :recycle: DQ stocks in 2017 had low volume and high yearly return (at that time this might be an indicator of a company on a rise). However, the situation of DQ stocks in 2018 has changed completely. Stocks closed its year with negative 63%. Trading volume was higher, yet didn’t result in a positive outcome. The results of this analysis confirmed a risky investment in DQ stocks.
 
 ### The code behind the table 
-Both scripts **“AllStockAnalysis”** and **“AllStockAnalysisRefactored”** have the same output. Codes run calculations from the following ![dataset](VBA_Challenge.xlsm) and return data on a new worksheet **All_Stock_Analysis**. The idea of presenting two codes with the same output is to highlight the **importance of refactoring**.
+Both scripts **“AllStockAnalysis”** and **“AllStockAnalysisRefactored”** have the same output. Codes run calculations from the following [dataset](VBA_Challenge.xlsm) and return data on a new worksheet **All_Stock_Analysis**. The idea of presenting two codes with the same output is to highlight the **importance of refactoring**.
 
 <p align="center">
 <img src="Graphics/StockAnalysis.gif" width="50%" height="50%">
