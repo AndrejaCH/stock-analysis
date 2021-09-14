@@ -20,7 +20,7 @@ The purpose of this analysis is to help Steve analyze the green-energy stock mar
 
 
 <p align="center">
-In this report :recycle: symbol is used to highlight the findings for Steve.
+In this report :recycle: symbol is used to highlight findings for Steve.
 </p>
 
 ## Results
